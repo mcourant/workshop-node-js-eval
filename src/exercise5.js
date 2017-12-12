@@ -1,3 +1,10 @@
 exports.run = function(input) {
-  console.log("Exercise #5");
+  var fs = require('fs');
+
+  var result = 0;
+  var array_number = fs.readFileSync(input).toString().split("\n");
+  array_number.forEach( (element) => {
+    result += parseInt(element);
+  });
+  return result;
 };
