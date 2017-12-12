@@ -1,5 +1,5 @@
 exports.run = function(input) {
-  var result = 0
+  let result = 0;
   input.forEach( (element) => {
       switch(element.operator){
           case "substract":
