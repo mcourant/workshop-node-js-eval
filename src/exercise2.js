@@ -1,3 +1,11 @@
 exports.run = function(input) {
-  console.log("Exercise #2");
+  var array_input = input.split("");
+  var result = ""
+  array_input.forEach( (element)=>{
+      if(element < 6){
+        result+= element
+      }
+  });
+  return result
 };
+
